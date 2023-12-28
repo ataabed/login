@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!---website Meta-->
+    <meta charset="UTF-8">
+    <!-- viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---- project desription -->
+    <meta name="description" content="Login project ">
+    <!-- project search engine keyword-->
+    <meta name="keywords" content="login project ,javascript">
+
+    <!--title will appera in bookmark-->
+    <title>Login  </title>
+
+    <!--favicon-->
+
+<!--     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+ -->
+
+    <!---fonts-->
+    <!-- used google fonts section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- used other fonts section  -->
+    <!--font awsem-->
+    <!-- v4.6-->
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--v6-->
+    <link rel="stylesheet" href="./fonts/all.min.css">
+
+    <!--my CSS Basics -->
+    <link rel="stylesheet" href="./myStyle/myStyleBasics.css">
+
+    <!---bootstrap css file -->
+    <link rel="stylesheet" href="./myStyle/bootstrap.min.css ">
+    <!---- Main css file link -->
+    <link rel="stylesheet" href="./myStyle/myStyle.css">
+    <!-- my media query style-->
+    <link rel="stylesheet" href="./myStyle/myMediaQuery.css">
+
+    <!--My page Title-->
+
+</head>
+
+<body>
+    <!----->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark pt-3">
+        <div id="navChild" class="container-fluid">
+            <a class="navbar-brand ps-5" href="javascript:void(0)">SMART LOGIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse pe-5" id="mynavbar">
+                <button class="d-none ms-auto btn btn-outline-warning" id="btnLogOut">
+                    LogOut
+                </button>
+
+            </div>
+        </div>
+    </nav>
+    <!----->
+    <div id="divHomeContent" class="d-none text-center w-100  d-flex  justify-content-center align-items-center ">
+      
+        <div id="divHomeContent_child" class="m-auto w-50  d-flex  justify-content-center align-items-center">
+            <div>
+                  <p class="text-center ">
+            <h2 id="home_welcome" class="pe-1 d-inline-block ">Welcome </h2>
+            <h2 id="home_Welcome_User" class=" d-inline-block"></h2>
+            </p>
+            </div>
+          
+        </div>
+
+
+    </div>
+
+    <div class="container mt-5  ">
+        <div class="row  ">
+
+
+        </div>
+        <!-- modal-->
+
+
+        <div class="modal fade " data-bs-backdrop="static" id="myModal">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+
+
+                    <!-- Modal body -->
+                    <div class="modal-body p-5">
+
+                        <h1 class="mb-4 text-center "> Smart Login System </h1>
+                        <input id="userName" class="form-control mb-2 d-none" type="text" placeholder="Enter your Name">
+
+                        <input id="userEmail" class="form-control  mb-2" type="text" placeholder="Enter your Email">
+                        <input id="userPassword" class="form-control mb-2" type="password"
+                            placeholder="Enter your password">
+
+                        <p class="text-center">
+                            <span id="span_inCorrect_data" class="d-none text-danger">
+
+
+                            </span>
+                        </p>
+                        <button id="btnMemberLogin" class="d-block btn btn-outline-info w-100 mb-2">Login</button>
+                        <button id="btnNewMemberAdd" class="d-none btn btn-outline-info w-100  mb-2">SignUp</button>
+
+                        <div id="" id="divToggleLogin_signUp">
+
+                            <p class="text-center d-block text-light " id="p_login">
+                                Don't have an Account <a class="d-inline-block text-light  ps-3 mb-2"
+                                    id="btnSignUp">SignUp</a>
+
+                            </p>
+                            <p class="text-center d-none text-light " id="p_signUp">
+                                I have an Account <a class="d-inline-block text-light ps-3 mb-2"
+                                    id="btnShowLogin">Login</a>
+
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end of modal -->
+
+        <!---bootstrab script bundle -->
+        <script src="./script/bootstrap.bundle.min.js" re></script>
+        <script src="./script//myScript.js"></script>
+
+</body>
+
+</html>
